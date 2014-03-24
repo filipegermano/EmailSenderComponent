@@ -8,10 +8,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="css/cssform.css" rel="stylesheet" type="text/css">
+        <title>Enviar E-mail</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="top_bar">
+            <div id="home">
+
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="box">
+                <div id="top_header">
+                    <h3>Enviar Email</h3>
+                    <br>
+                </div>
+                <form name="cadastro_pessoa" method="POST" action="EnviaEmail">
+                    <di id="inputs">
+                        <input type="text" name="eRemetente" placeholder="E-mail remetente" required="true">
+                        <input type="text" name="nRemetente" placeholder="Nome remetente" required="true">
+                        <input type="text" name="eDestinatario" placeholder="E-mail destinatário" required="true">
+                        <input type="text" name="nDestinatario" placeholder="Nome destinatário" required="true">
+                        <input type="text" name="host" placeholder="Host" required="true">
+                        
+                        <input type="text" name="porta" placeholder="Porta" required="true">
+                        <input type="password" name="senha" placeholder="Senha" required="true">
+                        <input type="text" name="assunto" placeholder="Assunto" required="true">
+                        
+                        <textarea type="text" name="msg" placeholder="Mensagem"></textarea>
+                                            
+                        <input type="submit" value="Enviar">
+                        ${result}
+                    </di>
+                </form>
+                <br>
+            </div>
+        </div>
     </body>
 </html>
+

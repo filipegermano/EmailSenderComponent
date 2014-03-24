@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+/EmailSenderComponent-war/build/
+/build/
+/EmailSenderComponent-ejb/dist/
+/EmailSenderComponent-war/dist/

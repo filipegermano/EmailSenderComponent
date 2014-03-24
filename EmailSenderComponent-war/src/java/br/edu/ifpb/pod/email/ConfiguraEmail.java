@@ -8,12 +8,13 @@ public class ConfiguraEmail {
 
     private String emailRemetente;
     private String nomeRemetente;
-    private String senha;
+    private String emailDestinatario;
+    private String nomeDestinatario;
     private String host;
     private Integer porta;
     private boolean ssl;
-    private String emailDestinatario;
-    private String nomeDestinatario;
+    private String senha;
+    private String assunto;
     private String mensagem;
 
     public String getEmailRemetente() {
@@ -86,5 +87,13 @@ public class ConfiguraEmail {
 
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
+    }
+
+    public String getAssunto() {
+        return assunto;
+    }
+
+    public void setAssunto(String assunto) {
+        this.assunto = assunto;
     }
 }
